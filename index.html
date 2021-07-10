@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheets" href="style.css">
         <title>Reservia</title>
         <script src="https://kit.fontawesome.com/3da326ba66.js" crossorigin="anonymous"></script>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 <body>
     <!-- Section 1 Header/Navbar -->
     <header>
         <nav class="navbar">
-            <a href="index.html" id="logo"> <img src="images/logo/Reservia@3x.png" alt="logo"></a>
+            <div class="navbar-logo">
+                <a href="index.html" id="logo"> <img src="images/logo/Reservia.svg" alt="logo"></a>
+            </div>
+            <div class="navbar-link">
             <div id="navbar-1">
-                <a href="#blocs">Hébergements</a>
+                <a href="#blocs-accomodations">Hébergements</a>
             </div>
             <div id="navbar-2">
                 <a href="#blocs-activities">Activités</a>
             </div>
             <div id="navbar-3">
                 <a href="#">S'inscrire</a>
+            </div>
             </div>
         </nav>
     </header>
@@ -40,10 +46,10 @@
         <div class="filters">
             <h3 class="title-h3">Filtres</h3>
             <ul class="filter-ul">
-                <li class="filter-button1"><i class="fas fa-money-bill-wave"></i> Économique</li>
-                <li class="filter-button2"><i class="fas fa-child"></i> Familial</li>
-                <li class="filter-button3"><i class="fas fa-heart"></i> Romantique</li>
-                <li class="filter-button4"><i class="fas fa-dog"></i> Animaux autorisés</li>
+                <li class="filter-button"><i class="fas fa-money-bill-wave"></i> Économique</li>
+                <li class="filter-button"><i class="fas fa-child"></i> Familial</li>
+                <li class="filter-button"><i class="fas fa-heart"></i> Romantique</li>
+                <li class="filter-button"><i class="fas fa-dog"></i> Animaux autorisés</li>
             </ul>
         </div>
 
@@ -54,7 +60,7 @@
     </section>
 
     <!-- Section 3 Accomodations -->
-    <section class="bloc1" id="blocs">
+    <section class="bloc1" id="blocs-accomodations">
         <h2 class="title-h2-bloc1">Hébergements à Marseille</h2>
             <div class="accomodations">
                 <a href=#>
