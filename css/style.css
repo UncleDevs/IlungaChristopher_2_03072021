@@ -1,7 +1,12 @@
 body { font-family: 'Raleway', sans-serif;
+    
 }
 
-a{ text-decoration: none;
+a { text-decoration: none;
     color: initial;
+}
 
+header {
+    width: 98%;
+    margin: auto;
 }
