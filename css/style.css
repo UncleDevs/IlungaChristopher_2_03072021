@@ -21,9 +21,9 @@ a { text-decoration: none;
     display: flex;
     grid-area: navbar;
 }
+
 #logo {
     grid-area: logo;
-    height: 2.813rem;
 }
 
 .navlink {
@@ -45,13 +45,13 @@ a { text-decoration: none;
 }
 
 .signup {
-    display: flex;
     color: #0065FC;
     font-weight: bold;
     grid-area: signup;
     padding: 2rem;
-
 }
+/*HEADER NAVBAR*/
+
 
 /*SEARCH BAR*/
 .main {
@@ -143,8 +143,12 @@ a { text-decoration: none;
 .info p {
     display: inline;
 }
+/*SEARCH BAR*/
+
+
 
 /* Partie hébergement */
+
 
     /*IMAGES*/
 .acco-img img {
@@ -191,13 +195,15 @@ a { text-decoration: none;
 }
     /*Etoiles*/
 
-    /*Layout blocs*/
+
+    /*Accomodations Bloc*/
 .blocs-hébergements {
     display: grid;
     grid-template-columns: 1.9fr 1fr;
     column-gap: 30px;
-    margin: 40px 0 60px 0;
+    margin: 40px 0 60px 0;   
 }
+
 
 .bloc-accomodations {
     background: #F2F2F2;
@@ -210,20 +216,21 @@ a { text-decoration: none;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 1.3rem;
     
 }
 
 .title-h2-bloc1 {
     display: block;
     width: 100%;
-    margin-left: 3rem;
+    padding-left: 30px;
+    padding-top: 15px;
 }
 
 .accomodations {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 27px;
+    grid-gap: 1.7rem;
     padding: 0 0 0 0;
 }
 
@@ -249,6 +256,8 @@ a { text-decoration: none;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .bloc2 {
@@ -271,6 +280,8 @@ a { text-decoration: none;
     align-items: flex-start;
     justify-content: space-between;
     margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .pop-acc {
@@ -301,8 +312,120 @@ a { text-decoration: none;
 .pop-acc .bloc-price {
     margin-top: -3rem;
 }
-    /*Layout Blocs*/
+    /*Accomodations Bloc*/
+/*Partie Hébergement*/
 
 
 
+    /*Activity Bloc*/
 
+
+.activities {
+    height: 550px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
+    grid-gap: 30px;
+    grid-template-areas:
+    "act-1 act-2 act-4 act-5"
+    "act-1 act-2 act-4 act-5"
+    "act-1 act-2 act-4 act-6"
+    "act-1 act-2 act-4 act-6"
+    "act-1 act-3 act-4 act-6"
+    "act-1 act-3 act-4 act-6"
+    ;
+}
+
+.activities .act-bloc {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 17px -9px rgb(0 0 0 / 75%);
+}
+
+.activity {
+    height: 100%;
+    margin: 0;
+}
+
+.act-bloc:hover{
+    transform: scale(1.03);
+}
+.act-bloc img {
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.title-acti {
+    position: absolute;
+    width: 95%;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 0 20px 5%;
+    margin: 0;
+    bottom: 0;
+}
+
+#act-1 {
+    grid-area: act-1;
+}
+
+#act-2 {
+    grid-area: act-2;
+}
+
+#act-3 {
+    grid-area: act-3;
+}
+
+#act-4 {
+    grid-area: act-4;
+}
+
+#act-5 {
+    grid-area: act-5;
+}
+
+#act-6 {
+    grid-area: act-6;
+}
+
+
+.footer {
+    width: 100%;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-légal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.footer-bloc {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.h3-footer {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    margin-bottom: 10px;
+}
+
+.footer-bloc-assistance {
+    margin-right: 22%;
+}
