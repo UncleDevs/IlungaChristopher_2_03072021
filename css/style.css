@@ -60,6 +60,11 @@ a { text-decoration: none;
     box-sizing: border-box;
 }
 
+.research-box {
+    display: inline-flex;
+    flex-direction: row;
+}
+
 .fa-map-marker-alt {
         background-color: #F2F2F2;
         padding: 1rem 1.25rem;
@@ -68,22 +73,20 @@ a { text-decoration: none;
 }
 
 .searchinput {
-    border-right: none;
-    border-left: none;
-    border-top: #F2F2F2 0.063rem solid;
-    border-bottom: #F2F2F2 0.063rem solid;
-    padding: 0.9rem 1.5rem;
-    box-sizing: border-box;
-    width: 14rem;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: "Raleway", "Sans serif";
+    padding: 1rem 0rem 1rem 1rem;
+    height: 1rem;
+    width: 13.5rem;
+    border: none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+    text-align: left;
 }
 
 .searchinput::placeholder {
     font-family: "Raleway", "Sans serif";
     font-size: 1rem;
     color: black;
+    font-weight: bold;
 }
 
 .button-research {
@@ -115,14 +118,14 @@ a { text-decoration: none;
     border: 0.125rem #e2e2e2 solid;
     padding: 0 1.25rem 0 0;
     margin-top: 0.625rem;
-    border-radius: 12.5rem;
+    border-radius: 200px;
 }
 
 .icon-filter {
     background-color: #DEEBFF;
     color: #0065fc;
-    padding: 1.125rem;
-    border-radius: 2rem;
+    padding: 1.3rem;
+    border-radius: 32px;
     margin-right: 0.938rem;
 }
 
@@ -136,13 +139,14 @@ a { text-decoration: none;
     color: #0065fc;
     padding: 0.5rem 0.8rem 0.5rem 0.8rem;
     border: solid 1px #D9D9D9;
-    border-radius: 1rem;
+    border-radius: 16px;
     margin-right: 1.3rem;
 }
 
 .info p {
     display: inline;
 }
+
 /*SEARCH BAR*/
 
 
@@ -154,27 +158,28 @@ a { text-decoration: none;
 .acco-img img {
     width: 100%;
     height: 7rem;
-    border-radius: 1.3rem 1.3rem 0 0;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
 .acco-img {
-    width: 250px;
-    height: 100px;
+    width: 16rem;
+    height: 6.25rem;
     background-size: 100% 100%;
     border-radius: 20px 20px 0 0;
 }
 
 .pop-room img {
     width: 100%;
-    height: 8rem;
-    border-radius: 1.3rem 0rem 0 1.3rem;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
 
 .pop-room {
     width: 100px;
-    height: 140px;
+    height: 150px;
+    min-width: 130px;
     background-size: 100% 100%;
     border-radius: 20px 20px 0 0;
 }
@@ -266,13 +271,25 @@ a { text-decoration: none;
     align-items: center;
 }
 
-.popular-bloc{
+.popular-bloc {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     row-gap: 0.6rem;
     height: 90%;
     width: 90%;
+}
+
+#pop-chambre1 {
+    margin-top: 1.8rem;
+}
+
+#pop-chambre2 {
+    margin-top: 1.8rem;
+}
+
+#pop-chambre3 {
+    margin-top: 1.8rem;
 }
 
 .title-h2-bloc2 h2 {
@@ -284,13 +301,14 @@ a { text-decoration: none;
     padding-right: 20px;
 }
 
+
 .pop-acc {
     display: flex;
     margin: 1rem;
     background-color: white;
-    border-radius: 1.3rem;
+    border-radius: 17px;
     padding: 0.5rem 0 0.5rem 0.5rem;
-    box-shadow: 0px 0px 0.5rem 0px #0000002e;
+    box-shadow: 0px 0px 0.5rem 0rem #0000002e;
 }
 
 .pop-acc:hover {
@@ -298,10 +316,11 @@ a { text-decoration: none;
 }
 
 .pop-acc .text {
-    margin-left: 10px;
+    margin-left: 0.625rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 0.6rem 3.5rem 0.3rem 0.5rem;
 }
 
 .pop-acc .text .title-acco {
@@ -309,15 +328,22 @@ a { text-decoration: none;
     margin: 0;
 }
 
-.pop-acc .bloc-price {
-    margin-top: -3rem;
+.pop-acc .text .bloc-price {
+    margin-top: 0rem;
+    margin-bottom: 2.2rem;
 }
+
+.price {
+    font-weight: bold;
+}
+
     /*Accomodations Bloc*/
+
+
 /*Partie Hébergement*/
 
 
-
-    /*Activity Bloc*/
+/*Partie Activités*/
 
 
 .activities {
@@ -337,7 +363,7 @@ a { text-decoration: none;
     ;
 }
 
-.activities .act-bloc {
+.act-bloc {
     position: relative;
     width: 100%;
     height: 100%;
@@ -353,6 +379,7 @@ a { text-decoration: none;
 .act-bloc:hover{
     transform: scale(1.03);
 }
+
 .act-bloc img {
     object-fit: cover;
     border-radius: 20px;
@@ -395,6 +422,11 @@ a { text-decoration: none;
     grid-area: act-6;
 }
 
+
+/*Partie Activités*/
+
+
+    /*FOOTER*/
 
 .footer {
     width: 100%;
