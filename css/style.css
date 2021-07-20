@@ -22,7 +22,7 @@ a { text-decoration: none;
     grid-area: navbar;
 }
 
-#logo {
+.logo {
     grid-area: logo;
 }
 
@@ -58,6 +58,10 @@ a { text-decoration: none;
     max-width: 1440px;
     margin: auto;
     box-sizing: border-box;
+}
+
+.title-h1 {
+    margin-top: 1rem;
 }
 
 .research-box {
@@ -177,8 +181,8 @@ a { text-decoration: none;
 }
 
 .pop-room {
-    width: 100px;
-    height: 150px;
+    width: 6.25rem;
+    height: 9.375rem;
     min-width: 130px;
     background-size: 100% 100%;
     border-radius: 20px 20px 0 0;
@@ -307,8 +311,9 @@ a { text-decoration: none;
     margin: 1rem;
     background-color: white;
     border-radius: 17px;
-    padding: 0.5rem 0 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     box-shadow: 0px 0px 0.5rem 0rem #0000002e;
+    margin-right: 1rem;
 }
 
 .pop-acc:hover {
@@ -320,7 +325,7 @@ a { text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0.6rem 3.5rem 0.3rem 0.5rem;
+    padding: 0.6rem 3rem 0.3rem 0.5rem;
 }
 
 .pop-acc .text .title-acco {
@@ -347,12 +352,12 @@ a { text-decoration: none;
 
 
 .activities {
-    height: 550px;
-    margin-bottom: 100px;
+    height: 34rem;
+    margin-bottom: 6.25rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
-    grid-gap: 30px;
+    grid-gap: 1.875rem;
     grid-template-areas:
     "act-1 act-2 act-4 act-5"
     "act-1 act-2 act-4 act-5"
@@ -368,7 +373,7 @@ a { text-decoration: none;
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    box-shadow: 1px 1px 17px -9px rgb(0 0 0 / 75%);
+    box-shadow: 1px 1px 17px -9px; 
 }
 
 .activity {
@@ -393,7 +398,7 @@ a { text-decoration: none;
     width: 95%;
     background-color: white;
     border-radius: 0 0 20px 20px;
-    padding: 20px 0 20px 5%;
+    padding: 1.25rem 0 1.25rem 1.07rem;
     margin: 0;
     bottom: 0;
 }
@@ -444,20 +449,97 @@ a { text-decoration: none;
 }
 
 .footer-bloc {
-    padding: 30px;
+    padding: 1.875rem;
     display: flex;
     flex-direction: column;
 }
 
 .h3-footer {
-    font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .footer-link {
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .footer-bloc-assistance {
     margin-right: 22%;
 }
+
+@media (max-device-width: 480px) {
+    
+    .header {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "logo signup"
+        "navbar navbar";
+    }
+    
+    .signup {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navlink {
+        border-top: none;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .navlink[data-active=true]{
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+
+    .navlink:hover {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+
+    .blocs-hébergements {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "mobile1"
+        "mobile2";
+    }
+
+    .bloc2 {
+        grid-area: mobile1;
+    }
+
+    .bloc1 {
+        grid-area: mobile2;
+        background: white;
+    }
+
+    .accomodations {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(6, 1fr) ;
+    }
+
+    .activities {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        "act-1"
+        "act-2"
+        "act-3"
+        "act-4"
+        "act-5"
+        "act-6";
+    }
+}
+    
+
+    
+    
+    
+
+    
