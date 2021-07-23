@@ -1,5 +1,6 @@
 body { font-family: 'Raleway', sans-serif;
     margin: 0;
+    width: 100%;
 }
 
 a { text-decoration: none;
@@ -9,11 +10,12 @@ a { text-decoration: none;
 /*HEADER NAVBAR*/
 
 .header {
-    align-items: center;
     max-width: 1440px;
+    width: 98%;
     margin: auto;
     display: grid;
-    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "logo . navbar signup"
 }
@@ -25,6 +27,7 @@ a { text-decoration: none;
 
 .logo {
     grid-area: logo;
+    
 }
 
 .navlink {
@@ -50,6 +53,8 @@ a { text-decoration: none;
     font-weight: bold;
     grid-area: signup;
     padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
 }
 /*HEADER NAVBAR*/
 
@@ -57,24 +62,32 @@ a { text-decoration: none;
 /*SEARCH BAR*/
 .main {
     max-width: 1440px;
+    width: 98%;
     margin: auto;
-    box-sizing: border-box;
 }
 
 .title-h1 {
-    margin-top: 1rem;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.subtitle {
+    margin: 1rem, 0rem;
 }
 
 .research-box {
     display: inline-flex;
     flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem
 }
 
 .fa-map-marker-alt {
         background-color: #F2F2F2;
         padding: 1rem 1.25rem;
-        border-radius: 1rem 0 0 1rem;
-        text-align: center;
+        border-radius: 16px 0 0 16px;
+        justify-content: center;
+        align-items: center;
 }
 
 .searchinput {
@@ -99,7 +112,7 @@ a { text-decoration: none;
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 16px 16px 0;
     padding: 1rem 1.5rem;
     font-family: "Raleway", "Sans serif";
     font-size: 1rem;
@@ -289,36 +302,24 @@ a { text-decoration: none;
     width: 90%;
 }
 
-#pop-chambre1 {
-    margin-top: 1.8rem;
-}
-
-#pop-chambre2 {
-    margin-top: 1.8rem;
-}
-
-#pop-chambre3 {
-    margin-top: 1.8rem;
-}
 
 .title-h2-bloc2 h2 {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 
 .pop-acc {
     display: flex;
-    margin: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
     background-color: white;
     border-radius: 17px;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     box-shadow: 0px 0px 0.5rem 0rem #0000002e;
-    margin-right: 1rem;
+    
 }
 
 .pop-acc:hover {
@@ -330,17 +331,20 @@ a { text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0.6rem 3rem 0.3rem 0.5rem;
+    
 }
 
 .pop-acc .text .title-acco {
-    padding: 0rem 0;
-    margin: 0;
+    margin: 0.5rem 1.7rem 1rem 1rem;
+
 }
 
 .pop-acc .text .bloc-price {
-    margin-top: 0rem;
-    margin-bottom: 2.2rem;
+    margin: -1rem 1.7rem 1rem 1rem ;
+}
+
+.pop-acc .text .stars {
+    margin: -1rem 1.7rem 0 1rem;
 }
 
 .price {
@@ -400,10 +404,10 @@ a { text-decoration: none;
 
 .title-acti {
     position: absolute;
-    width: 95%;
+    width: 95.3%;
     background-color: white;
     border-radius: 0 0 20px 20px;
-    padding: 1.25rem 0 1.25rem 1.07rem;
+    padding: 1.25rem 0 1.25rem 4.9%;
     margin: 0;
     bottom: 0;
 }
@@ -471,9 +475,145 @@ a { text-decoration: none;
     margin-right: 22%;
 }
 
-@media (max-device-width: 480px) {
-   
 
+@media screen and (min-width:980px) and (max-width:1440px) {
+    .pop-accomodations {
+        display: flex;     
+    }
+
+    
+    #pop-chambre1 {
+        width: 90%;
+    }
+
+    #pop-chambre2 {
+        width: 90%;
+    }
+
+    #pop-chambre3 {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width:1440px) {
+
+    .blocs-hébergements {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "mobile1"
+        "mobile2";
+    }
+    
+    
+    .bloc2 {
+        grid-area: mobile1;
+        border-radius: 25px;
+    }
+
+    .bloc1 {
+        margin-top: 1rem;
+        margin-bottom: -3rem;
+        grid-area: mobile2;
+        border-radius: 25px;
+    }
+
+    .acco-img {
+        width: 100%;
+        height: auto; 
+    }
+
+    
+    .pop-room img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+@media screen and (max-width: 980px) {
+   
+    .title-h1 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-top: 2rem
+    }
+
+    
+    .research-box {
+        margin: 0rem 2rem 2rem 1rem;    
+    }
+
+    
+    .fa-search {
+        margin-left: -0.4rem;
+    }
+
+    .title-h3 {
+        margin-left: 1.1rem;
+    }
+
+    .info {
+        margin-left: 1.1rem;
+    }
+
+    
+    .title-h2-bloc2 h2 {
+        padding: 0;
+    }
+
+    
+    .title-h2-bloc1 {
+        padding: 0;
+    }
+
+    .title-h3-bloc1 {
+        margin-left: auto;
+    }
+
+    .accomodations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
+
+    .acco {
+        margin: auto;
+    }
+
+    
+    .activities {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "act-1 act-2"
+        "act-3 act-4"
+        "act-5 act-6";
+        margin-bottom: 15rem;
+
+    }
+
+    .bloc3 {
+        margin: 1rem;
+    }
+
+    .act-bloc {
+        max-height: 14rem;
+        width: 100%;
+    }
+
+    
+
+    .footer-bloc-assistance {
+        margin-right: 10%;
+    }
+
+}
+    
+@media screen and (max-width:600px) {
     .header {
         display: grid;
         grid-template-columns: auto auto;
@@ -486,12 +626,14 @@ a { text-decoration: none;
     .logo {
         margin-left: 1rem;
     }
-
-    .signup {
-        display: flex;
-        justify-content: flex-end;
+    
+    .title-h1 {
+        margin-left: 1rem;
     }
 
+    .subtitle {
+        margin-left: 1rem;
+    }
     .navlink {
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
@@ -512,58 +654,31 @@ a { text-decoration: none;
         border-top: none;
     }
 
-    .main-title {
-        margin: 2rem 2rem 1rem 1rem;
-    }
-
-    .title-h1 {
-        font-size: 1.6rem;
-        font-weight: 600;
-    
-    }
-
-    .subtitle {
-        font-size: 1.1rem;
-        margin-bottom: 2rem;
-    }
-
     .research-box {
-        margin: 0rem 2rem 2rem 1rem;  
+        position: relative;
+        width: 80%;
     }
 
-    .searchinput {
-        width: 16rem;
-    }
-
+    
     #button-research {
         display: none;
     }
 
     #icon-research {
         display: block;
+        position: absolute;
+        right: -1rem;
         border-radius: 15px;
-        width: 1rem;
+        width: 3rem;
     }
     
-    .fa-search {
-        margin-left: -0.4rem;
+    .filter-ul {
+        margin-left: 1rem;
     }
 
-    .title-h3 {
-        margin-left: 1.1rem;
-    }
-
-    .info {
-        margin-left: 1.1rem;
-    }
-
-    .blocs-hébergements {
-        display: grid;
-        grid-template-rows: 1fr auto;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "mobile1"
-        "mobile2";
+    .filter-button {
+        padding: 0 0.75rem 0 0;
+        margin-left: 0.3rem;
     }
 
     .accomodations {
@@ -572,48 +687,15 @@ a { text-decoration: none;
         grid-template-rows:repeat(6, 1fr) ;
     }
 
-    .bloc2 {
-        grid-area: mobile1;
-        border-radius: 0px;
-    }
-
     .bloc1 {
-        margin-top: 1rem;
-        margin-bottom: -3rem;
-        grid-area: mobile2;
-        background: white; 
+        background-color: white;
+        margin: 0;
+    }
+
+
+    .bloc2 {
+        width: 100%;
         border-radius: 0px;
-    }
-
-    .title-h2-bloc2 h2 {
-        padding: 0;
-    }
-
-    .pop-acc {
-        width: 95%;
-        margin: auto;
-    }
-
-    .popular-bloc {
-        background-color: #F2F2F2;
-        margin-bottom: 2rem;
-    }
-
-    
-    .title-h2-bloc1 {
-        padding: 0;
-    }
-
-    .title-h3-bloc1 {
-        margin-left: auto;
-    }
-
-    .acco {
-        margin: auto;
-    }
-
-    .acco-img {
-        width: 23rem;  
     }
 
     
@@ -628,29 +710,18 @@ a { text-decoration: none;
         "act-4"
         "act-5"
         "act-6";
-        margin-bottom: 50rem;
+        margin-bottom: 63rem;
     }
 
-    .bloc3 {
-        margin: 1rem;
+    
+    .menu-légal {
+        display: flex;
+        flex-direction: column;
     }
 
-    .act-bloc {
-        max-height: 12rem;
+    .footer-bloc {
+        padding: 0.3rem 2rem;
     }
-
-    .title-acti {
-        width: 23.5rem;
-    }
-
-
-
 
 }
-    
 
-    
-    
-    
-
-    
