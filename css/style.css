@@ -83,11 +83,11 @@ a { text-decoration: none;
 }
 
 .fa-map-marker-alt {
-        background-color: #F2F2F2;
-        padding: 1rem 1.25rem;
-        border-radius: 16px 0 0 16px;
-        justify-content: center;
-        align-items: center;
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 16px 0 0 16px;
+    justify-content: center;
+    align-items: center;
 }
 
 .searchinput {
@@ -480,6 +480,11 @@ a { text-decoration: none;
     margin-right: 23%;
 }
 
+    /*FOOTER*/
+
+
+
+/*MEDIA QUERIES*/
 
 @media screen and (min-width:980px) and (max-width:1440px) {
 
@@ -497,15 +502,15 @@ a { text-decoration: none;
     
     
     .pop-acc .text .title-acco {
-        margin: 0 0 0 0;
+        margin: 0;
     }
     
     .pop-acc .text .bloc-price {
-        margin: 0 0 0 0;
+        margin: 0;
     }
     
     .pop-acc .text .stars {
-        margin: 0 0 0 0;
+        margin: 0;
     }
     
     
@@ -545,6 +550,8 @@ a { text-decoration: none;
         padding-left: 1rem;
     }
 }
+
+
 @media screen and (max-width: 980px) {
    
     .title-h1 {
