@@ -15,7 +15,7 @@ a { text-decoration: none;
     margin: auto;
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 5fr 1fr 1fr;
+    grid-template-columns: 1fr 5fr auto auto;
     grid-template-rows: 1fr;
     grid-template-areas: "logo . navbar signup"
 }
@@ -177,7 +177,6 @@ a { text-decoration: none;
 .info p {
     display: inline;
 }
-
 
 /*SEARCH BAR*/
 
@@ -512,8 +511,6 @@ a { text-decoration: none;
     .pop-acc .text .stars {
         margin: 0;
     }
-    
-    
 }
 
 
@@ -634,7 +631,6 @@ a { text-decoration: none;
     .footer-bloc-assistance {
         margin-right: 5%;
     }
-
 }
     
 @media screen and (max-width:600px) {
@@ -650,13 +646,17 @@ a { text-decoration: none;
     .logo {
         margin-left: 1rem;
     }
-    
+
+    .signup {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .title-h1 {
         margin-left: 1rem;
         font-size: 1.43rem;
     }
 
-    
     
     .subtitle {
         margin-left: 1rem;
@@ -743,7 +743,6 @@ a { text-decoration: none;
         margin: 0 0 0.5rem 0;
     }
 
-    
 
     .activities {
         display: grid;
